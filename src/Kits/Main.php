@@ -18,7 +18,7 @@ class Main extends PluginBase{
     $this->getServer()->getLogger()->info(Color::RED."KitsMc has been disabled");
      }
      public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
-      switch($cmd->getName()(({
+      switch($cmd->getName()){
        case 'vip':
         $player->getInventory()->setHelmet(item::get(310, 0, 1));
         $player->getInventory()->setChestPlate(item::get(311, 0, 1));
