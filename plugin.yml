@@ -3,3 +3,6 @@ main: Kits\Main
 version: 1.9v
 api: 3.0.0
 author: Pluginer_mt
+commands:
+  vip:
+      description: VIP kit
