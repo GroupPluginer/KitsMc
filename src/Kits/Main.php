@@ -17,7 +17,7 @@ use pocketmine\player;
    public function onDisable(){
     $this->getServer()->getLogger()->info("KitsMc has been disabled");
      }
-     public function onCommand(CommandSender $sender, Command $cmd, player $player, $label, array $args){
+     public function onCommand(CommandSender $player, Command $cmd, $label, array $args){
       switch($cmd->getName()){
        case 'vip':
         $player->getInventory()->setHelmet(Item::get(310, 0, 1));
