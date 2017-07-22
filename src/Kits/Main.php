@@ -7,8 +7,9 @@ use pocketmine\item\Item;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\inventory\InventoryBase;
+use pocketmine\player
 
-class Main extends PluginBase{
+ class Main extends PluginBase{
 
  public function onEnable(){
   $this->getServer()->getLogger()->info("KitsMC has been enabled");
