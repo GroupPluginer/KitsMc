@@ -12,10 +12,10 @@ use pocketmine\inventory\InventoryBase;
 class Main extends PluginBase{
 
  public function onEnable(){
-  $this->getServer()->getLogger()->info(Color::GREEN."KitsMc has been enabled");
+  $this->getServer()->getLogger()->info("KitsMC has been enabled");
    }
    public function onDisable(){
-    $this->getServer()->getLogger()->info(Color::RED."KitsMc has been disabled");
+    $this->getServer()->getLogger()->info("KitsMc has been disabled");
      }
      public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
       switch($cmd->getName()){
@@ -28,7 +28,8 @@ class Main extends PluginBase{
         $player->getInventory()->addItem(item::get(322, 0, 15));
         $player->getInventory()->addItem(item::get(261, 0, 1));
         $player->getInventory()->addItem(item::get(262, 0, 15));
-         break;
+        $player->sendMessage("Done you get KIT vip");
+        break;
       }
      }
     }
