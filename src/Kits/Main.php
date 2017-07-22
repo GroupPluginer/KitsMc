@@ -19,7 +19,7 @@ use pocketmine\player;
      }
      public function onCommand(CommandSender $sender, Command $cmd, $lable, array $args){
       switch($cmd->getName()){
-       case 'vip':
+       case vip:
         $player->getInventory()->setHelmet(Item::get(310, 0, 1));
         $player->getInventory()->setChestPlate(Item::get(311, 0, 1));
         $player->getInventory()->setBoost(Item::get(313, 0, 1));
