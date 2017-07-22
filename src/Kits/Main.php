@@ -4,7 +4,6 @@ namespace Kits;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\item\item
-use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\text\TextFormat as Color;
 use pocketmine\inventory\InventoryBase;
