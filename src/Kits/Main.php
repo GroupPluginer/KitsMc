@@ -16,7 +16,7 @@ class Main extends PluginBase{
    public function onDisable(){
     $this->getServer()->getLogger()->info("KitsMc has been disabled");
      }
-     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
+     public function onCommand(CommandSender $sender, Command $cmd, $lable, array $args){
       switch($cmd->getName()){
        case 'vip':
         $player->getInventory()->setHelmet(item::get(310, 0, 1));
